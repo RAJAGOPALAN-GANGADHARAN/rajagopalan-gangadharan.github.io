@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.22/darkreader.min.js"></script>
+    <title>Blog</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog/feeds/rss/">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="/blog/feeds/atom/">
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/static/mezzanine/js/jquery-1.8.3.min.js"></script>
+
+
+
+
+    <link href="/static/assets/img/favicon.png" rel="icon">
+    <link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Vendor CSS Files -->
+    <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="/static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+
+    <link href="/static/assets/css/style.css" rel="stylesheet">
+    <script>
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            if (themeName == 'theme-dark') {
+                DarkReader.setFetchMethod(window.fetch)
+                DarkReader.enable({
+                    brightness: 80,
+                    contrast: 110,
+                    sepia: 0
+                });
+            }
+            else {
+                DarkReader.disable();
+            }
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        $(document.getElementById('slider')).ready(function () {
+            console.log(localStorage.getItem('theme'));
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-light');
+                document.getElementById('slider').checked = true;
+            }
+        })();
+
+    </script>
+    <style>
+        /* The switch - the box around the slider */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* The slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 40px;
+            width: 40px;
+            left: 0px;
+            bottom: 4px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            box-shadow: 0 0px 15px #2020203d;
+            background: white url('https://i.ibb.co/FxzBYR9/night.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        input:checked+.slider {
+            background-color: #2196f3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196f3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(24px);
+            -ms-transform: translateX(24px);
+            transform: translateX(24px);
+            background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+
+
+
+</head>
+
+<body id="page-top">
+
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" href="/">Rajagopalan</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/#service">Experience</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/#work">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/blog/">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" target="blank"
+                            href="https://rajagopalan-gangadharan.github.io/Portfolio/">OS Mode</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="searchNav" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <span class="ion-ios-search"></span></a>
+
+
+                        <style>
+                            .search-form {
+                                color: #fff;
+                                box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+                                background-color: #1e2833;
+                                padding: 10px;
+                                border: 1px solid black;
+                                border-radius: 20px;
+                            }
+
+                            .search-form form .form-control {
+                                border: none;
+                                background: none;
+                                border-bottom: 1px solid #434a52;
+                                border-radius: 0;
+                                box-shadow: none;
+                                outline: none;
+                                color: inherit;
+                            }
+
+                            .search-form form .btn-primary {
+                                background: #214a80;
+                                border: none;
+                                border-radius: 4px;
+                                padding: 11px;
+                                box-shadow: none;
+                                margin-top: 26px;
+                                text-shadow: none;
+                                outline: none;
+                                align-items: center;
+                            }
+                        </style>
+                        <div class="sidebar-content search-form dropdown-menu" style="padding:5px;border-radius: 4px;"
+                            aria-labelledby="searchNav">
+                            <form action="/search/" class="navbar-form navbar-right" role="search">
+
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Search" type="text" name="q" value="">
+                                </div>
+
+
+
+
+                                <input type="submit" class="btn btn-primary" value="Search">
+
+                            </form>
+                        </div>
+
+            </div>
+            </li>
+            </ul>
+            <div>
+                <label style="margin:10px" id="switch" class="switch">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+
+
+    <div id="home" class="intro route bg-image" style="background-image: url(/static/assets/img/blogging.jpg)">
+        <div class="overlay-itro"></div>
+        <div class="intro-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <!--<p class="display-6 color-d">Hello, world!</p>-->
+
+                    <h1 class="intro-title mb-4">I am Rajagopalan Gangadharan</h1>
+                    <p class="intro-subtitle"><span class="text-slider-items">Software Development Blogs,
+                            Open Source blogs, Competitive Programming Blogs, Interview Blogs
+                        </span><strong class="text-slider"></strong></p>
+                    <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <section id="work" class="portfolio-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h3 class="title-a">
+                                Home
+                            </h3>
+                            <p class="subtitle-a">
+                                This page contains blogs written by Rajagopalan Gangadharan
+                            </p>
+                            <div class="line-mf"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-sidebar sidebar-search">
+                <h5 class="sidebar-title">Search</h5>
+                <div class="sidebar-content">
+                    <form action="/search/" class="navbar-form navbar-right" role="search">
+                        <input type='hidden' name='csrfmiddlewaretoken'
+                            value='kcAckUVzlc9kQq3T07TGhgU9XjCM3ANG6FHQ4auTSLO1jBYRcsT2j675UlpW2RE3' />
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for..."
+                                aria-label="Search for..." name="q" value="">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary btn-search" type="submit">
+                                    <span class="ion-android-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+
+                    <li class="page-item  disabled">
+                        <a class="page-link">&larr;</a>
+                    </li>
+
+                    <li class="page-item  active">
+                        <a class="page-link" href="?page=1">1</a>
+                    </li>
+
+                    <li class="page-item ">
+                        <a class="page-link" href="?page=2">2</a>
+                    </li>
+
+                    <li class="page-item ">
+                        <a class="page-link" href="?page=3">3</a>
+                    </li>
+
+                    <li class="page-item ">
+                        <a class="page-link" href="?page=2">&rarr;</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-4">
+                    <div class="work-box" style="max-height: max-content;">
+
+                        <a href="/blog/qt-experience/">
+                            <div class="work-img">
+                                <img class="img-fluid"
+                                    src="https://storage.googleapis.com/raj-portfolio-storage/uploads/.thumbnails/qt_logo.png/qt_logo-350x219.png">
+                            </div>
+                        </a>
+
+
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Qt-Experience</h2>
+                                    <p>Freelance Qt Development Experience</p>
+                                    <div class="w-more">
+
+
+                                        in
+
+                                        <span class="w-ctegory"><a href="/blog/category/work-experience/">Work
+                                                Experience</a> </span>
+
+
+
+                                        <br />
+                                        <span class="w-date">Dec. 3, 2020, 8:22 a.m.</span>
+                                        <br />
+
+                                        <span>Posted by:
+
+                                            <a href="/blog/author/Rajagopalan/">Rajagopalan Gangadharan</a>
+
+                                        </span>
+                                        <span>
+
+
+
+                                            <a href="/blog/qt-experience/#comments">
+                                                0 comments
+                                            </a>
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <a href="/blog/qt-experience/"> <span class="ion-ios-book-outline"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="work-box" style="max-height: max-content;">
+
+                        <a href="/blog/math-tricks-1/">
+                            <div class="work-img">
+                                <img class="img-fluid"
+                                    src="https://storage.googleapis.com/raj-portfolio-storage/uploads/blog/.thumbnails/howtoovercom.jpg/howtoovercom-350x219.jpg">
+                            </div>
+                        </a>
+
+
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Math Tricks</h2>
+                                    <p>Maths tips and tricks for programmers</p>
+                                    <div class="w-more">
+
+
+                                        in
+
+                                        <span class="w-ctegory"><a href="/blog/category/maths/">Maths</a>, </span>
+
+                                        <span class="w-ctegory"><a href="/blog/category/programming/">Programming</a>
+                                        </span>
+
+
+
+                                        <br />
+                                        <span class="w-date">Nov. 17, 2020, 11 a.m.</span>
+                                        <br />
+
+                                        <span>Posted by:
+
+                                            <a href="/blog/author/Rajagopalan/">Rajagopalan Gangadharan</a>
+
+                                        </span>
+                                        <span>
+
+
+
+                                            <a href="/blog/math-tricks-1/#comments">
+                                                0 comments
+                                            </a>
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <a href="/blog/math-tricks-1/"> <span class="ion-ios-book-outline"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="work-box" style="max-height: max-content;">
+
+                        <a href="/blog/kosarajus-scc/">
+                            <div class="work-img">
+                                <img class="img-fluid"
+                                    src="https://storage.googleapis.com/raj-portfolio-storage/uploads/blog/.thumbnails/scc.png/scc-350x219.png">
+                            </div>
+                        </a>
+
+
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Kosaraju&#39;s SCC</h2>
+                                    <p> Kosaraju's SCC
+                                    </p>
+                                    <div class="w-more">
+
+
+                                        in
+
+                                        <span class="w-ctegory"><a href="/blog/category/programming/">Programming</a>,
+                                        </span>
+
+                                        <span class="w-ctegory"><a href="/blog/category/technique/">Technique</a>
+                                        </span>
+
+
+
+                                        <br />
+                                        <span class="w-date">Nov. 17, 2020, 8:45 a.m.</span>
+                                        <br />
+
+                                        <span>Posted by:
+
+                                            <a href="/blog/author/Rajagopalan/">Rajagopalan Gangadharan</a>
+
+                                        </span>
+                                        <span>
+
+
+
+                                            <a href="/blog/kosarajus-scc/#comments">
+                                                0 comments
+                                            </a>
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <a href="/blog/kosarajus-scc/"> <span class="ion-ios-book-outline"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="work-box" style="max-height: max-content;">
+
+                        <a href="/blog/pre-and-post-ordering-of-dfs/">
+                            <div class="work-img">
+                                <img class="img-fluid"
+                                    src="https://storage.googleapis.com/raj-portfolio-storage/uploads/.thumbnails/1_z89j_nodx9hkfcphy3rpzg.png/1_z89j_nodx9hkfcphy3rpzg-350x219.png">
+                            </div>
+                        </a>
+
+
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Pre and Post Ordering of DFS</h2>
+                                    <p>A very useful technique.It basically has 2 arrays
+                                    </p>
+                                    <div class="w-more">
+
+
+                                        in
+
+                                        <span class="w-ctegory"><a href="/blog/category/data-structures/">Data
+                                                Structures</a>, </span>
+
+                                        <span class="w-ctegory"><a href="/blog/category/technique/">Technique</a>
+                                        </span>
+
+
+
+                                        <br />
+                                        <span class="w-date">Nov. 17, 2020, 8:43 a.m.</span>
+                                        <br />
+
+                                        <span>Posted by:
+
+                                            <a href="/blog/author/Rajagopalan/">Rajagopalan Gangadharan</a>
+
+                                        </span>
+                                        <span>
+
+
+
+                                            <a href="/blog/pre-and-post-ordering-of-dfs/#comments">
+                                                0 comments
+                                            </a>
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <a href="/blog/pre-and-post-ordering-of-dfs/"> <span
+                                                class="ion-ios-book-outline"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="work-box" style="max-height: max-content;">
+
+                        <a href="/blog/patience-sort/">
+                            <div class="work-img">
+                                <img class="img-fluid"
+                                    src="https://storage.googleapis.com/raj-portfolio-storage/uploads/blog/.thumbnails/download.jpg/download-350x219.jpg">
+                            </div>
+                        </a>
+
+
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Patience Sort</h2>
+                                    <p>Patience Sort: Useful for LIS in O(nlogn)</p>
+                                    <div class="w-more">
+
+
+                                        in
+
+                                        <span class="w-ctegory"><a href="/blog/category/programming/">Programming</a>,
+                                        </span>
+
+                                        <span class="w-ctegory"><a href="/blog/category/technique/">Technique</a>
+                                        </span>
+
+
+
+                                        <br />
+                                        <span class="w-date">Nov. 17, 2020, 8:39 a.m.</span>
+                                        <br />
+
+                                        <span>Posted by:
+
+                                            <a href="/blog/author/Rajagopalan/">Rajagopalan Gangadharan</a>
+
+                                        </span>
+                                        <span>
+
+
+
+                                            <a href="/blog/patience-sort/#comments">
+                                                0 comments
+                                            </a>
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <a href="/blog/patience-sort/"> <span class="ion-ios-book-outline"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+
+                <li class="page-item  disabled">
+                    <a class="page-link">&larr;</a>
+                </li>
+
+                <li class="page-item  active">
+                    <a class="page-link" href="?page=1">1</a>
+                </li>
+
+                <li class="page-item ">
+                    <a class="page-link" href="?page=2">2</a>
+                </li>
+
+                <li class="page-item ">
+                    <a class="page-link" href="?page=3">3</a>
+                </li>
+
+                <li class="page-item ">
+                    <a class="page-link" href="?page=2">&rarr;</a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">&copy; Copyright <strong>Rajagopalan Gangadharan</strong>. All Rights
+                            Reserved</p>
+                        <div class="credits">
+                            Designed with 💓
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="/static/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+    <script src="/static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="/static/assets/vendor/counterup/jquery.counterup.min.js"></script>
+    <script src="/static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="/static/assets/vendor/typed.js/typed.min.js"></script>
+    <script src="/static/assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>
