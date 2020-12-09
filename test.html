@@ -1,0 +1,786 @@
+
+<!doctype html>
+<html lang="en">
+
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.22/darkreader.min.js"></script>
+<title>Home</title>
+<link rel="shortcut icon" href="/static/img/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/blog/feeds/rss/">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="/blog/feeds/atom/">
+
+
+
+
+
+
+
+
+
+
+
+<script src="/static/mezzanine/js/jquery-1.8.3.min.js"></script>
+
+
+
+
+<link href="/static/assets/img/favicon.png" rel="icon">
+<link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Vendor CSS Files -->
+<link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/static/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/static/assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="/static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+
+<link href="/static/assets/css/style.css" rel="stylesheet">
+<script>
+    function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            if(themeName=='theme-dark'){
+                DarkReader.setFetchMethod(window.fetch)
+                DarkReader.enable({
+                    brightness: 80,
+                    contrast: 110,
+                    sepia: 0
+                });
+            }
+            else{
+                DarkReader.disable();
+            }
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        $(document.getElementById('slider')).ready(function () {
+            console.log(localStorage.getItem('theme'));
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-light');
+                document.getElementById('slider').checked = true;
+            }
+        })();
+    
+</script>
+<style>
+    /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 0 0px 15px #2020203d;
+  background: white url('https://i.ibb.co/FxzBYR9/night.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+  background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+
+
+
+</head>
+
+<body id="page-top">
+    
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" href="/">Rajagopalan</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/#service">Experience</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/#work">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/blog/">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="/#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" target="blank" href="https://rajagopalan-gangadharan.github.io/Portfolio/">OS Mode</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="searchNav" role="button" data-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false" >
+                            <span class="ion-ios-search"></span></a>
+                        
+                            
+<style>
+    .search-form{
+        color:#fff;
+        box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+        background-color:#1e2833;
+        padding:10px;
+        border:1px solid black;
+        border-radius:20px;
+    }
+    .search-form form .form-control{
+        border:none;
+        background:none;
+        border-bottom:1px solid #434a52;
+        border-radius:0;
+        box-shadow:none;
+        outline:none;
+        color:inherit;
+    }
+    .search-form form .btn-primary {
+        background:#214a80;
+        border:none;
+        border-radius:4px;
+        padding:11px;
+        box-shadow:none;
+        margin-top:26px;
+        text-shadow:none;
+        outline:none;
+        align-items: center;
+        }
+</style>
+<div class="sidebar-content search-form dropdown-menu" style="padding:5px;border-radius: 4px;" aria-labelledby="searchNav">
+<form action="/search/" class="navbar-form navbar-right" role="search">
+
+<div class="form-group">
+    <input class="form-control" placeholder="Search" type="text" name="q" value="">
+</div>
+
+
+
+
+<input type="submit" class="btn btn-primary" value="Search">
+
+</form>
+</div>
+
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                <label style="margin:10px" id="switch" class="switch">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+<div id="home" class="intro route bg-image" style="background-image: url(/static/assets/img/intro-bg-new.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+        <div class="table-cell">
+            <div class="container">
+                <!--<p class="display-6 color-d">Hello, world!</p>-->
+                
+                <h1 class="intro-title mb-4">I am Rajagopalan Gangadharan</h1>
+                <p class="intro-subtitle"><span class="text-slider-items">
+                    SDET @ AppDynamics, Open Source Maintainer, Competitive Programmer, GSOC Student, GSOC Mentor
+                    </span><strong class="text-slider"></strong></p>
+                    <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5">
+                                    <div class="about-img">
+                                        <img src="/static/assets/img/headshot.png" class="img-fluid rounded b-shadow-a"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-7">
+                                    <div class="about-info">
+                                        <p><span class="title-s">Name: </span> <span>Rajagopalan Gangadharan</span></p>
+                                        <p><span class="title-s">Profile: </span> <span>Software Developer</span></p>
+                                        <p><span class="title-s">Email: </span> <span>g.raju2000@gmail.com</span></p>
+                                        <p><span class="title-s">Phone: </span> <span>+91-9941154469</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-mf">
+                                <p class="title-s">Skill</p>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-me pt-4 pt-md-0">
+                                <div class="title-box-2">
+                                    <h5 class="title-left">
+                                        About me
+                                    </h5>
+                                </div>
+                                <p class="lead">
+                                
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="service" class="services-mf pt-5 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                        Work Experience
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                        Education
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico" style="text-align: center;">
+                        <img style="width:100px;height:100px" src="/static/assets/img/vit.png"/></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Vellore Institute of Technology, Chennai</h2>
+                        <p class="s-description text-center">
+                            2017 - 2021
+                            <br/>
+                            BTECH in CSE with <b>CGPA: 9.42/10</b>
+                            <br/><br/>
+                            <b>7<sup>th</sup> Rank holder in 1<sup>st</sup> Sem and 9<sup>th</sup> Rank holder in 3<sup>rd</sup> Sem</b>
+                            <br/><br/>
+                            Studied Courses like: Data Structures and Algorithms, Machine Learning,
+                            Artificial Intelligence, Software development, Compiler Design
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico" style="text-align: center;">
+                        <img style="width:100px;height:100px" src="/static/assets/img/ps.png" /></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">P.S. Senior Secondary School, Chennai</h2>
+                        <p class="s-description text-center">
+                            2015 - 2017
+                            <br/>
+                            XII<sup>th</sup> Grade with <b>94.4 %</b>
+                            <br/><br/>
+                            <b>
+                                1<sup>st</sup> in 4 electives in AISSCE,
+                                Subject topper in chemistry,
+                                Second best project in Computer Science,
+                                Highest aggregate English,Maths and Computer Science
+                            </b>
+                            <br/><br/>
+                            Studied Physics, Chemistry,Maths with Computer Science as major
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico" style="text-align: center;">
+                        <img style="width:100px;height:100px" src="/static/assets/img/st-john.jpg" /></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">St.John's Senior Secondary School, Chennai</h2>
+                        <p class="s-description text-center">
+                            2002 - 2015
+                            <br/>
+                            Foundation and X<sup>th</sup> Grade with <b>CGPA : 9.6/10</b>
+                            <br/><br/>
+                            <b>
+                                Activities and Societies:
+                                Green Wealth Heaping Seminar Rounds,Tesla Quiz,
+                                Google Science Fair 2014,IT TALENT Kids search contest winner,NSO,NCO,
+                                IMO,IEO Medalist
+                                
+                            </b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+</section><!-- End Services Section -->
+
+<div class="section-counter paralax-mf bg-image" style="background-image: url(/static/assets/img/counters-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+        <div class="row">
+              
+        </div>
+    </div>
+</div><!-- End Counter Section -->
+
+
+<section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                        Projects
+                    </h3>
+                    <p class="subtitle-a">
+                        Projects developed by me
+                    </p>
+                    <div class="line-mf"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row"> 
+        
+        </div>
+    </div>
+    </section>
+
+    <!-- ======= Testimonials Section ======= -->
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(/static/assets/img/overlay-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="testimonial-mf" class="owl-carousel owl-theme">
+                        <div class="testimonial-box">
+                            <div class="author-test">
+                                <img src="/static/assets/img/rec-1.jpg" alt="" class="rounded-circle b-shadow-a">
+                                <span class="author">Adrien Destugues</span>
+                            </div>
+                            <div class="content-test">
+                                <p class="description lead">
+                                    I mentored Rajagopalan during Google Summer of code. His work involved two large codebases (Haiku and WebKit) and
+                                    coordinating efforts between both projects, with major changes to the Haiku-WebKit library.
+                                    He was able to figure out complex integration problems between Haiku and WebKit as well as implement the required
+                                    components to integrate them together.
+                                </p>
+                                <span class="comit"><i class="fa fa-quote-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="testimonial-box">
+                            <div class="author-test">
+                                <img src="/static/assets/img/rec-2.jpg" alt="" class="rounded-circle b-shadow-a">
+                                <span class="author">Ankush Bhardwaj</span>
+                            </div>
+                            <div class="content-test">
+                                <p class="description lead">
+                                    Rajagopalan had been an amazing mentor to me during NWOC'19. He possesses great technical skills and a good grasp on
+                                    core CS concepts. He also has experience working on popular open source projects.
+                                </p>
+                                <span class="comit"><i class="fa fa-quote-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Testimonials Section -->
+
+    <section id="blog" class="blog-mf sect-pt4 route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-a">
+                            Blog
+                        </h3>
+                        <p class="subtitle-a">
+                            Recent Blog posts
+                        </p>
+                        <div class="line-mf"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                
+                <div class="col-md-4">
+                    <div class="card card-blog">
+                        <div class="card-img">
+                            <a href="/blog/skill/"><img src="https://storage.googleapis.com/raj-portfolio-storage/" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-category-box">
+                                <div class="card-category">
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            <h3 class="card-title"><a href="/blog/skill/">skill</a></h3>
+                            <p class="card-description">
+                                Test skill
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <a href="/blog/skill/">
+                                    <img src="/static/assets/img/intro-bg-new.jpg" alt="" class="avatar rounded-circle">
+                                    <span class="author">raj</span>
+                                </a>
+                            </div>
+                            <div class="post-date">
+                                <span class="ion-ios-clock-outline"></span> 20 minutes ago
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-4" style="height: auto; text-align: center;">
+                        <div class="card card-blog">
+                            <div class="card-img">
+                                <a href=""><img src="/static/assets/img/blogging.jpg" alt=""
+                                        class="img-fluid"></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-category-box">
+                                    <div class="card-category">
+                                        
+                                    </div>
+                                </div>
+                                <h3 class="card-title"><a href="/blog/">More Blogs</a></h3>
+                                <p class="card-description">
+                                    Click to find more blogs
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="post-author">
+                                    <a href="">
+                                        <img src="/static/assets/img/intro-bg-new.jpg" alt="" class="avatar rounded-circle">
+                                        <span class="author">Rajagopalan</span>
+                                    </a>
+                                </div>
+                                <div class="post-date">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Blog Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route"
+        style="background-image: url(/static/assets/img/overlay-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact-mf">
+                        <div id="contact" class="box-shadow-full">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="title-box-2">
+                                        <h5 class="title-left">
+                                            Send Message To Me
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <form method="post" role="form" class="php-email-form" action="/messageme/">
+                                            <input type='hidden' name='csrfmiddlewaretoken' value='EYAWeyg8HiK3IgdZjFKvZ3cW2IWIpwSJSCFjHN3J9L43mlVFkCJgoSgjspjYoZ2j' />
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" name="name" class="form-control" id="name"
+                                                            placeholder="Your Name" data-rule="minlen:4"
+                                                            data-msg="Please enter at least 4 chars" />
+                                                        <div class="validate"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                            placeholder="Your Email" data-rule="email"
+                                                            data-msg="Please enter a valid email" />
+                                                        <div class="validate"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="subject" id="subject"
+                                                            placeholder="Subject" data-rule="minlen:4"
+                                                            data-msg="Please enter at least 8 chars of subject" />
+                                                        <div class="validate"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" name="message" rows="5"
+                                                            data-rule="required" data-msg="Please write something for us"
+                                                            placeholder="Message"></textarea>
+                                                        <div class="validate"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 text-center mb-3">
+                                                    <div class="loading">Loading</div>
+                                                    <div class="error-message"></div>
+                                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                                </div>
+                                                <div class="col-md-12 text-center">
+                                                    <button type="submit"
+                                                        class="button button-a button-big button-rouded">Send
+                                                        Message</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="title-box-2 pt-4 pt-md-0">
+                                        <h5 class="title-left">
+                                            Get in Touch
+                                        </h5>
+                                    </div>
+                                    <div class="more-info">
+                                        <p class="lead">
+                                            You can contact me regarding anything through message or through social media...
+                                        </p>
+                                        <ul class="list-ico">
+                                            <li><span class="ion-ios-location"></span> Chennai, India
+                                            </li>
+                                            <li><span class="ion-ios-telephone"></span> +91-9941154469</li>
+                                            <li><span class="ion-email"></span> g.raju2000@gmail.com</li>
+                                        </ul>
+                                    </div>
+                                    <div class="socials">
+                                        <style>
+                                            .icons-contact li{
+                                                margin:10px;
+                                            }
+                                        </style>
+                                        <ul class="icons-contact">
+                                            <li><a href="https://github.com/RAJAGOPALAN-GANGADHARAN"><span class="ico-circle"><i
+                                                            class="ion-social-github"></i></span></a></li>
+                                            <li><a href="https://www.linkedin.com/in/rajagopalan-gangadharan/"><span class="ico-circle"><i
+                                                            class="ion-social-linkedin"></i></span></a></li>
+                                            <li><a href="https://www.facebook.com/marcus.dorian.900/"><span class="ico-circle"><i
+                                                            class="ion-social-facebook"></i></span></a></li>
+                                            <li><a href="https://www.quora.com/profile/Rajagopalan-Gangadharan-1"><span class="ico-circle"><i
+                                                            class="fa fa-quora"></i></span></a></li>
+                                            <li><a href="https://www.kaggle.com/rajagopalang" target="blank"><span class="ico-circle"><img align="center"
+                                                    src="https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" alt="Rajagopalan" height="30" width="30" /></span></a></li>
+
+                                            <li><a href="https://codeforces.com/profile/g.raju2000" target="blank"><span class="ico-circle"><img align="center"
+                                                    src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg" alt="Rajagopalan" height="30"
+                                                    width="30" /></span></a></li>
+                                            <li><a href="https://leetcode.com/marcusdorian/" target="blank"><span class="ico-circle"><img align="center"
+                                                    src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="Rajagopalan" height="30"
+                                                    width="30" /></span></a></li>
+                                            <li><a href="https://summerofcode.withgoogle.com/archive/2019/projects/5011585305673728/" target="blank"><span class="ico-circle"><img align="center"
+                                                    src="https://rajagopalan-gangadharan.github.io/Host-Server/1200px-GSoC-icon.svg.png" alt="Rajagopalan"
+                                                    height="30" width="30" /></span></a></li>
+                                            <li><a href="https://www.hackerearth.com/@g.raju2000" target="blank"><span class="ico-circle"><img align="center"
+                                                    src="https://rajagopalan-gangadharan.github.io/Host-Server/HackerEarth_logo.png" alt="Rajagopalan" height="30"
+                                                    width="30" /></span></a></li>
+                                            <li><a href="https://www.hackerrank.com/g_raju2000" target="blank"><span class="ico-circle"><img align="center"
+                                                    src="https://rajagopalan-gangadharan.github.io/Host-Server/HackerRank_logo.png" alt="Rajagopalan" height="30"
+                                                    width="30" /></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Contact Section -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="copyright-box">
+                    <p class="copyright">&copy; Copyright <strong>Rajagopalan Gangadharan</strong>. All Rights Reserved</p>
+                    <div class="credits">
+                        Designed with 💓
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/static/mezzanine/css/editable.css">
+<script>
+
+
+
+
+window.__filebrowser_url = '/admin/media-library/browse/';
+window.__link_list_url = '/admin/displayable_links.js';
+window.__toolbar_html = '\u000A\u000A\u003Cdiv id\u003D\u0022editable\u002Dtoolbar\u0022 method\u003D\u0022POST\u0022 action\u003D\u0022/admin/logout/\u0022\u003E\u000A    \u000A    \u000A    \u000A    \u003Ca id\u003D\u0022editable\u002Dtoolbar\u002Dtoggle\u0022 href\u003D\u0022#\u0022\u003E\u003C/a\u003E\u000A    \u003Ca href\u003D\u0022/admin/\u0022\u003EAdmin\u003C/a\u003E\u000A    \u003Ca href\u003D\u0022/admin/logout/?next\u003D/\u0022\u003ELog out\u003C/a\u003E\u000A\u003C/div\u003E\u000A\u000A\u003Cimg id\u003D\u0022editable\u002Dloading\u0022 src\u003D\u0022/static/mezzanine/img/loadingAnimation.gif\u0022\u003E\u000A\u000A';
+window.__static_proxy = '/admin/asset_proxy/';
+window.__language_code = 'en';
+window.__tinymce_css = '/static/mezzanine/css/tinymce.css';
+</script>
+<link href="/static/mdown/wmd/wmd.css" type="text/css" media="all" rel="stylesheet" />
+<script type="text/javascript" src="/static/mdown/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/static/mdown/wmd/jquery.wmd.min.js"></script>
+<script src="/static/mezzanine/js/jquery.tools.toolbox.expose.js"></script>
+<script src="/static/mezzanine/js/jquery.tools.overlay.js"></script>
+<script src="/static/mezzanine/js/jquery.form.js"></script>
+<script src="/static/mezzanine/js/editable.js"></script>
+
+
+
+
+
+
+
+<!-- Vendor JS Files -->
+<script src="/static/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="/static/assets/vendor/php-email-form/validate.js"></script>
+<script src="/static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="/static/assets/vendor/counterup/jquery.counterup.min.js"></script>
+<script src="/static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="/static/assets/vendor/typed.js/typed.min.js"></script>
+<script src="/static/assets/vendor/venobox/venobox.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="/static/assets/js/main.js"></script>
+
+</body>
+</html>
