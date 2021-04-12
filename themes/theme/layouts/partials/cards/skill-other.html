@@ -1,0 +1,32 @@
+<div class="col-xs-12 col-sm-6 col-lg-4 pt-2">
+  <a class="skill-card-link" href="{{ if .url }}{{ .url }}{{ else }}javascript:void(0){{ end }}" {{ if .url }}target="_blank"{{ end }}>
+    <div class="card" style="height:100%">
+      <div class="card-head d-flex">
+        {{ if .logo }}
+          {{ $logoImage := resources.Get .logo }}
+
+          {{/*  svg don't support "Fit" operation   */}}
+          {{ if ne $logoImage.MediaType.SubType "svg" }}
+            {{ $logoImage := $logoImage.Fit "24x24" }}
+          {{ end }}
+
+          <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+        {{ end }}
+        <h5 class="card-title">{{ .name }}</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{ .summary | markdownify }}</p>
+      </div>
+      {{ if .url}}
+      <div class="card-footer mt-auto">
+        {{ range first 1 .url }}
+        <a style="margin-top: 15px;" href="{{ .urlList }}" data-lightbox="image-{{ .id }}" class="btn btn-primary image-link">View-certificate</a>
+        {{ end }}
+        {{ range after 1 .url }}
+        <a style="margin-top: 15px;display:none;" href="{{ .urlList }}" data-lightbox="image-{{ .id }}" class="">View-certificate</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </a>
+</div>

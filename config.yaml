@@ -2,7 +2,7 @@ baseURL: https://rajagopalan-gangadharan.github.io
 
 languageCode: en-us
 title: "Rajagopalan's Space"
-theme: "toha"
+theme: "theme"
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/

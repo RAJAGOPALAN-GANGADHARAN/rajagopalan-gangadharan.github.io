@@ -1,0 +1,22 @@
+{{ $achievementImage := resources.Get .image }}
+{{ $achievementImageLg := ""}}
+{{ $achievementImageSm := ""}}
+
+{{/* resize the images. don't resize svg image because its not supported */}}
+{{ if $achievementImage }}
+  {{ $achievementImageSm = $achievementImage.Resize "x300" }}
+  {{ $achievementImageSm =  $achievementImageSm.RelPermalink }}
+  {{ $achievementImageLg = $achievementImage }}
+  {{ $achievementImageLg =  $achievementImageLg.RelPermalink }}
+{{ end }}
+{{/*  don't use "background-image: url('{{ $achievementImageSm }}');" Otherwise the images won't show in https://themes.gohugo.io/ */}}
+<a data-lightbox="image-{{ .id }}" data-title="{{ .summary | markdownify }}" href="{{ strings.TrimSuffix "/" site.BaseURL }}{{ $achievementImageLg }}">
+<div 
+  class="achievement-entry text-center"
+  style="border:black 1px solid;background-image: url('{{ strings.TrimSuffix "/" site.BaseURL }}{{ $achievementImageLg }}');"
+> 
+  <i class="fas fa-search-plus" id="enlarge-icon"></i>
+  <h4 class="title" id="achievement-title">{{ .title }}</h4>
+  
+</div>
+</a>
