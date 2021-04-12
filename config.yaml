@@ -16,10 +16,19 @@ languages:
 
 # Control TOC depth
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   tableOfContents:
     startLevel: 2
     endLevel: 6
     ordered: false
+
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
 
 # Enable global emoji support
 enableEmoji: true
@@ -27,7 +36,8 @@ enableEmoji: true
 # Site parameters
 params:
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/RAJAGOPALAN-GANGADHARAN/rajagopalan-gangadharan.github.io
+  gitBranch: source
 
   # specify whether you want to write some blog posts or not
   enableBlogPost: true
@@ -42,6 +52,6 @@ params:
 
   notes:
   # Set a background color of note card header. Use any CSS color code/name.
-  headerBackground: aliceblue
+    headerBackground: aliceblue
   # Set note card title color.
-  headerTextColor: #1c2d41
+    headerTextColor: #1c2d41
