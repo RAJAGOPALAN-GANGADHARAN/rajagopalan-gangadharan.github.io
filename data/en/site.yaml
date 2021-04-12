@@ -1,0 +1,7 @@
+description: Portfolio and personal blog of Rajagopalan Gangadharan.
+
+customMenus:
+- name: Interactive
+  url: https://rajagopalan-gangadharan.github.io/Portfolio/
+- name: Notes
+  url: /notes

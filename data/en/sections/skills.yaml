@@ -1,0 +1,51 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: C++
+  logo: /images/sections/skills/c++.png
+  summary: "Rich Experience with C/C++ programming. Built and maintaining high performance open source software, Used for contest programming and problem solving."
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with Bitbucket."
+  url: "https://github.com/RAJAGOPALAN-GANGADHARAN"
+- name: Internet of Things
+  logo: /images/sections/skills/cloud.png
+  summary: "Hobby projects like autonomous cars, light handlers etc. using Raspberry Pi and few other sensors like ultrasound and IR."
+- name: Docker
+  logo: /images/sections/skills/docker.svg
+  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
+  url: "https://www.docker.com/"
+- name: Java
+  logo: /images/sections/skills/java.png
+  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
+- name: Python
+  logo: /images/sections/skills/python.png
+  summary: "Intermediate Level Proficiency. Built GUI apps with tkinter, web apps with django, statistical and machine learning apps with Tensorflow. Can write short and concise code using comprehension techniques."
+- name: Qt
+  logo: /images/sections/skills/qt.png
+  summary: "Developed high performance C++ Gui with Qt framework. Ability to work with OS level properties like thread scheduling, bitmap manipulation etc."
+- name: Machine Learning
+  logo: /images/sections/skills/ml.png
+  summary: "Working knowledge on how to construct basic ml models like regression, decision trees, svm and complex models like cnn to do classifiers."
+- name: JavaScript
+  logo: /images/sections/skills/mern.png
+  summary: "Non professional Intermediate level Full stack development Experience with MERN (Mongo db, Express, React and Node) stack."
+- name: Rust
+  logo: /images/sections/skills/rust.png
+  summary: "Basic experience in building with wasm apps."
+- name: Unreal Engine 4
+  logo: /images/sections/skills/ue4.png
+  summary: "Working knowledge on blueprints, materials and game development in general. Built a game within 24 hours to teach students foreign language."
+- name: DevOps
+  logo: /images/sections/skills/teamcity.svg
+  summary: "Automate CI/CD pipelines and optimize build paramteres in major platforms like teamcity, GHA etc."

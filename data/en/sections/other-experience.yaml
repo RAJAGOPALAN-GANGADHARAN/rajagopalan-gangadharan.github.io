@@ -1,0 +1,57 @@
+section:
+  name: Roles and Responsibilities
+  id: other-experience
+  enable: true
+  weight: 6
+  showOnNavbar: true
+
+
+skills:
+- name: QtWebkit
+  logo: /images/sections/skills/qt.png
+  summary: Open source repository maintainer (Sept 2019 - Present).
+
+- name: Haiku-OS
+  logo: /images/sections/projects/haiku.png
+  summary: Open source repository contributor (Apr 2019 - Present).
+
+- name: Google Summer of Code
+  logo: /images/sections/projects/gsoc_logo.png
+  url: 
+    - urlList: /cert/gsoc2020_cert.png
+      id: b1
+  urlName: View-certificate
+  summary: Mentored a university student as part of GSOC-2020 for Haiku on the project Input preferences aimed at providing better control on input devices like tablets, mouse and keyboard. In the selection committee of GSOC 2021.
+
+- name: Spoken Tutorial - IIT Bombay
+  logo: /images/sections/projects/spokentut.jpg
+  url:
+    - urlList: /cert/ss1.jpg
+      id: ss1
+    - urlList: /cert/ss2.jpg
+      id: ss1
+    - urlList: /cert/ss3.jpg
+      id: ss1
+  urlName: View-certificate
+  summary: Event Coordinator and Professor mentor - Mentored professors from all over India and helped them learn various programming languages like (Ruby, Java, Python and C++) alongside setting problems to test their learnings from the course. (Apr 2020 - May 2020)
+
+- name: Google Code In 2019
+  logo: /images/sections/projects/gci_logo.png
+  url:
+    - urlList: /cert/gci_cert.png
+      id: a1
+  urlName: View-certificate
+  summary: Student Mentor - Mentored High School students to complete various tasks ranging from easy to hard with Haiku and choose the best contributor for the grand prize sponsored by Google. This was the final edition of GCI. (Dec 2019 - Jan 2019)
+
+- name: NJACK, IIT Patna
+  logo: /images/sections/projects/njack_logo.png
+  url:
+    - urlList: /cert/njack.jpg
+      id: s1
+  urlName: View-certificate
+  summary: Student Mentor - Mentored 3 students to work on one of my open-source projects (JS-OS), which involved reviewing the student’s code and teaching them various practices in the very first edition (Sept 2019 - Jan 2020). In the second edition worked with 4 more students to collaborate on my personal projects like JS-OS and DConsole (Sept 2020 - Jan 2021).
+
+- name: CrossWOC, IEEE DTU
+  logo: /images/sections/projects/crosswoc.png
+  urlName: View-certificate
+  summary: Student Mentor in the first edition of CrossWOC, mentored few students to work on issues created by me on personal projects like JS-OS and DConsole.(Feb 2021 - March 2021)

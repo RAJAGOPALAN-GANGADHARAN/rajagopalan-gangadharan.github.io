@@ -1,0 +1,45 @@
+# section information
+section:
+  name: Accomplishments
+  id: accomplishments
+  enable: true
+  weight: 8
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+
+# Your accomplishments
+accomplishments:
+- name: Control of Mobile Robots
+  timeline: June 2020
+  organization:
+    name: Coursera
+    url: https://www.coursera.org/
+  courseOverview: This course helps to understand how mobile robots are controlled via actuators, motors with the help of auxiliary data from sensors like IR, ultrasound.
+  certificateURL: https://www.coursera.org/account/accomplishments/certificate/YR9PJH7SQMT7
+
+- name: Natural Language Processing in Tensorflow
+  timeline: June 2020
+  organization:
+    name: Coursera
+    url: https://www.coursera.org/
+  courseOverview: This course provides a broad introduction to data extraction, data coupling, text processing using various algorithms implemented in tensorflow.
+  certificateURL: https://www.coursera.org/account/accomplishments/certificate/GHZRXTLBSKLK
+
+- name: Cisco Certified Network Tracer User
+  timeline: September 2018
+  organization:
+    name: Cisco
+    url: https://www.cisco.com/
+  courseOverview: The course provided an hands on experience on how to use cisco network packet tracer to monitor incoming/outgoing network packets etc.
+  certificateURL: https://www.cisco.com/
+
+- name: Google Summer Code 2020
+  timeline: "Apr 2019 - September 2019"
+  organization:
+    name: Google
+    url: https://summerofcode.withgoogle.com/
+  courseOverview: Successfully completed project porting webkit2 to Haiku as a part of GSOC 2019 program.
+  certificateURL: https://summerofcode.withgoogle.com/archive/2019/projects/5011585305673728/
+

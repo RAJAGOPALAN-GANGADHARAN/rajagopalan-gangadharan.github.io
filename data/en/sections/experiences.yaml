@@ -1,0 +1,90 @@
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: AppDynamics
+    url: "https://www.appdynamics.com/"
+    location: Bangalore
+    # company overview
+    overview: AppDynamics is an application performance management and IT operations analytics company based in San Francisco.
+  positions:
+  - designation: Software Engineer Intern
+    start: Jan 2021
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Wrote a light weight Desktop User Monitoring to integrate with thousand eyes, orchestrating data to the controller.
+    - Multi docker creation client for internal load generation use.
+    - Setup load generators on ec2 instances and Automate multi node application with the created client.
+
+- company:
+    name: QtWebkit
+    url: "https://doc.qt.io/archives/qt-5.5/qtwebkit-index.html"
+    location: Remote
+    overview: Qt WebKit is a web content rendering engine based on the open source WebKit project, featuring broad support for standard web technologies.
+  positions:
+  - designation: Freelance Software Engineer
+    start: September 2019
+    end: September 2020
+    responsibilities:
+    - Worked on porting Webkit using Cross platform UI framework Qt5.
+    - Various Networking Protocols implemented with native Qt network API’s .
+    - Cross platform Browser Engine over Mac, Windows, Linux, Android using Qt5.
+    - Used various rendering API’s of Qt5.
+    - Ported most parts of Platform Integration Layer like Process spawning, Network Fetching threads, Bitmap drawing using Qt APIs. Ported Webkit tests to benchmark and diagnose Qtwebkit.
+    - Configured GitHub actions for building Qtwebkit across multiple platforms and Travis for QA Testing (YAML).
+    - Wrote python scripts for downloading qt binaries for CI and automated build process.
+    - Setup cmake pch for supercharged builds.
+    - Fix various qtwebkit bugs listed by users.
+
+- company:
+    name: Google Summer of Code 2019
+    url: "https://summerofcode.withgoogle.com/archive/2019/projects/5011585305673728/"
+    location: Remote
+    overview: GSoC is an international annual program in which Google awards stipends to students who successfully complete a free and open-source software coding project during the summer. 
+  positions:
+  - designation: Student Developer with Haiku
+    start: April 2019
+    end: November 2020
+    responsibilities:
+    - Implemented Download to Folder options in Web positive (A Browser written in C++ for Haiku).
+    - Ported Webkit to Haiku. Worked with two large and complex code bases, making major changes to Haiku-Webkit library by implementing required components.
+    - Replaced the multi-thread network model with a single thread per request within Haiku’s Network Manager.
+
+
+- company:
+    name: Indian Institute of Information Technology, Design and Manufacturing
+    url: "/blog/#"
+    location: Kancheepuram
+  positions:
+  - designation: Research Intern
+    start: May 2018
+    end: June 2018
+    responsibilities:
+    - Implemented Transfer Learning with COCO Model, alongside edge detection algorithms to detect loops and other stains present on fabric using OpenCV and TensorFlow.
+    - Optimized model efficient enough to run on Raspberry Pi.
+    - Automating Detection of fabric flaw.
+
+
+- company:
+    name: VPropel
+    url: "http://www.vpropel.in/"
+    location: Kancheepuram
+    overview: VIT PROgramming Portal for Enhanced Learning
+  positions:
+  - designation: Testing Engineer and Analyst
+    start: May 2017
+    end: May 2018
+    responsibilities:
+    - Performed Automated Functional Testing using Selenium.
+    - Performed Analysis using Kibana and Elastic Search (ELK Stack) to detect plagiarism.
+    - Created a specific browser shell using CEF (Chromium Embedded Framework) to prevent tampering the site with custom extensions.

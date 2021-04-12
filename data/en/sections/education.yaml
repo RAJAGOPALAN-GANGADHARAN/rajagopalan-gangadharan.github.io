@@ -1,0 +1,84 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education-alt.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: B.Tech. in Computer Science & Engineering
+  icon: fa-graduation-cap
+  timeframe: 2017-2021
+  institution:
+    name: Vellore Institute of Technology, Chennai
+    url: "https://chennai.vit.ac.in/"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 3.8
+    outOf: 4
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: false
+    courses:
+    - name: Data Structures and Algorithm
+    - name: Network Security
+    - name: Operating System
+    - name: Artificial Intelligence
+    - name: Software development
+    - name: Compiler Design
+    - name: Machine Learning
+  extracurricularActivities: #(optional)
+  - 7th Rank holder in 1st Year
+  - 9th Rank holder in 3rd Year
+  - Fine Arts Club member - decorated college during tech and cultural events
+  - Program Representatative of CSE batch 2017 - attended IIT Pals program representing college.
+  - Also a Drama club member, performed acts to emphasize importance of education
+- name: Senior Secondary School Certificate
+  icon: fa-university
+  timeframe: 2015-2017
+  institution:
+    name: P.S. Senior Secondary School
+    url: https://pssenior.edu.in/
+  grade: #(optional)
+    scale: PERCENTAGE
+    achieved: 94.4
+    outOf: 100
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: true
+    courses:
+    - name: Computer Science
+      achieved: 99
+      outOf: 100
+    - name: Mathematics
+      achieved: 99
+      outOf: 100
+    - name: Physics
+      achieved: 95
+      outOf: 100
+    - name: Chemistry
+      achieved: 97
+      outOf: 100
+  extracurricularActivities: #(optional)
+  - 1st in 4 electives in AISSCE.
+  - Subject topper in chemistry.
+  - Second best project in Computer Science.
+  - Highest aggregate English,Maths and Computer Science.
+  - Studied Physics, Chemistry,Maths with Computer Science as major
+- name: High School Certificate
+  icon: fa-school
+  timeframe: 2002-2015
+  institution:
+    name: St. John's Senior Secondary School
+    url: https://stjohnscbse.com/
+  grade: #(optional)
+    scale: CGPA
+    achieved: 9.6
+    outOf: 10
+  extracurricularActivities:
+  - Activities and Societies - Green Wealth Heaping Seminar Rounds,Tesla Quiz, Google Science Fair 2014
+  - IT TALENT Kids search contest winner,NSO,NCO,EMATS School level Medalist

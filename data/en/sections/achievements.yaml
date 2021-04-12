@@ -1,0 +1,155 @@
+# section information
+section:
+  name: Memorabilia
+  id: achievements
+  enable: true
+  weight: 9
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your achievements achievements
+achievements:
+- title: Appdynamics - Joining Swag
+  image: /images/sections/achievements/cisco.jpg
+  id: 25
+  summary: Benefit of cisco owned company is that we get to receive two types of gifts :)
+
+- title: Guest Speaker - Roadmap to gsoc
+  image: /images/sections/achievements/roadmap.jpg
+  id: 1
+  summary: Talk conducted by DSC and PlaceXP club VIT. Shared my gsoc experience among about 300 students virtually.
+
+- title: Hacky New year 2021 - Final round qualifier
+  image: /images/sections/achievements/hny.jpg
+  id: 12
+  summary: Reached final and 3rd round in the hackathon Hacky new year 2021 - an internal hackathon conducted at Appdynamics annually. Was one of 26 teams qualified out of 150 teams.
+
+- title: Gsoc 2019 - Successfully Completed
+  image: /images/sections/achievements/gsoc2019cert.PNG
+  id: 2
+  summary: GSOC 2019 Student dev with Haiku
+
+- title: Gsoc 2019 - Acceptance Letter
+  image: /images/sections/achievements/gsocaccept.PNG
+  id: 3
+  summary: GSOC 2019 Acceptance Letter from google. About 10000 students compete in an international Level.
+
+- title: VPROPEL - Appreciation Letter
+  image: /images/sections/achievements/vpropelapprletter.JPG
+  id: 4
+  summary: Letter provided from college appreciating the work done in their online programming platform.
+
+- title: Runner up - Government Hackathon
+  image: /images/sections/achievements/hackathon.PNG
+  id: 5
+  summary: Awarded runner up in government hackathon for project - Attention Span detector 
+
+- title: 9th Rank Holder in 3rd year - CSE Batch
+  image: /images/sections/achievements/vit3rdyear_rank.JPG
+  id: 6
+  summary: Got 9th rank among 2500 CSE students. Also, got a cash prize.
+
+- title: First prize - International Language Day hackathon
+  image: /images/sections/achievements/languageday.JPG
+  id: 7
+  summary: Was awarded first prize for creating a game in UE4 within 24 hours for making an interactive way to teach students a new language.
+
+- title: Fine Arts - Part of decoration committee
+  image: /images/sections/achievements/finearts.JPG
+  id: 8
+  summary: As a fine arts member our responsibility was to decorate the college through art in case of tech/cultural events.
+
+- title: Drama Club memeber
+  image: /images/sections/achievements/drama.JPG
+  id: 9
+  summary: Performed a drama on benefits of education on account of international education day.
+
+- title: Newspaper Interview
+  image: /images/sections/achievements/newspaper_clip.JPG
+  id: 10
+  summary: Gave an interview to Times of India regarding interview experience in college.
+
+- title: Research paper in a national conference
+  image: /images/sections/achievements/researchpaper.JPG
+  id: 11
+  summary: Presented research paper on predictive keyboards in a national paper conference.
+
+
+- title: Cleared ZCO and Qualified for INOI
+  image: /images/sections/achievements/inoi.JPG
+  id: 13
+  summary: Cleared the first round of Informatics olympiad ZCO.
+
+
+- title: Materials Quiz - IIT 
+  image: /images/sections/achievements/materialsquiz.JPG
+  id: 14
+  summary: Was selected to represent my school in an national level chemistry quiz event.
+
+
+- title: Award Invitation
+  image: /images/sections/achievements/awardinvitation.JPG
+  id: 15
+  summary: Was sent a special invitation to attend the awards ceremony in my school annual day after passing out to recieve various awards.
+
+- title: Award Invitation
+  image: /images/sections/achievements/awardinvitation2.JPG
+  id: 15
+  summary: Was sent a special invitation to attend the awards ceremony in my school annual day after passing out to recieve various awards.
+
+- title: Subject Topper Chemistry - Class XII
+  image: /images/sections/achievements/chemsubjecttopper.JPG
+  id: 16
+  summary: Highest overall score in Chemistry in class XII.
+
+- title: Best Computer science project runner up - Class XII
+  image: /images/sections/achievements/cseprojectrunnerup.JPG
+  id: 17
+  summary: Bagged runner up award for best of computer science project class XII for making a word processor in Turbo C++.
+
+
+- title: First rank in 4 subjects combined
+  image: /images/sections/achievements/1stranktopperps.JPG
+  id: 18
+  summary: Secured in 4 electives AISSCE Science group.
+
+- title: Secured highest aggregate score in 3 subjects combined
+  image: /images/sections/achievements/highaggregateps.JPG
+  id: 19
+  summary: Secured highest aggregate score in 3 subjects combined - English, Maths, Computer Scinece
+
+- title: Secured 3rd rank in class VIII
+  image: /images/sections/achievements/3rdrank8.JPG
+  id: 20
+  summary: Secured 3rd rank in class VIII
+
+- title: Secured 3rd rank in class IV
+  image: /images/sections/achievements/3rdrank4.JPG
+  id: 21
+  summary: Secured 3rd rank in class IV
+
+- title: First prize in Quiz - ElShadaai
+  image: /images/sections/achievements/quiz1st.JPG
+  id: 22
+  summary: First prize in Inter school quiz conducted by ELShadaai
+
+- title: Third place in Essay writing - ElShadaai
+  image: /images/sections/achievements/essay3rd.JPG
+  id: 23
+  summary: Third prize in Inter school essay writing contest conducted by ELShadaai
+
+- title: Best Computer science project in Exhibition
+  image: /images/sections/achievements/projectexhibition.JPG
+  id: 24
+  summary: Won best computer science project in exhibition among 300 projects which consisted of senior teams as well. Also awarded small cash prize.
+
+- title: First Prize in Inter school Objective contest - class VI
+  image: /images/sections/achievements/interschoolquiz.JPG
+  id: 26
+  summary: First Prize in Inter school Objective contest - class VI. Was given a gold medal :)
+
+- title: First prize in JPSE - class IV
+  image: /images/sections/achievements/jpse.JPG
+  id: 27
+  summary: First Prize in Junior prodigy search examination - class IV.

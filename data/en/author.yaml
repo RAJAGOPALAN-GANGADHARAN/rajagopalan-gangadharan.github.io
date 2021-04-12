@@ -1,0 +1,21 @@
+# some information about you
+name: "Rajagopalan Gangadharan"
+nickname: "Raj"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+#image: "images/skills/c++.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "g.raju2000@gmail.com"
+  phone: "+91-9941154469"
+
+# some summary about what you do
+summary:
+  - SDE at Appdynamics (Cisco)
+  - Former GSOC student
+  - I am a GSOC Mentor
+  - I am a Competitive Programmer 
+  - I work on open-source projects
+  - I love to work with some fun projects
+
+  #SDET @ AppDynamics, Open Source Maintainer, Competitive Programmer, GSOC Student, GSOC Mentor

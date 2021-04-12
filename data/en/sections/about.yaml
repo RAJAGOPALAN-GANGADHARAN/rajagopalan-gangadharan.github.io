@@ -1,0 +1,56 @@
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Software Engineer
+# your company information
+company:
+  name: AppDynamics (Cisco)
+  url: "https://www.appdynamics.com/"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/Rajagopalan_SDE_Resume.pdf"
+
+# a summary about you
+summary: 'Budding Developer having about 1 year professional and 4 years of non-professional experience with a demonstrated history of working in the computer software industry. Skilled in Python, Javascript, C++, Adobe Creative Suite,Programming and Mathematics. Strong business development professional with a Bachelor of Technology - BTech focused in Computer Science from Vellore Institute of Technology. Graduated with CGPA of 9.5 out of 10. Can dive into huge codebases easily and quickly get up to the development speed. I am really friendly with others 😄. Also can learn any new tech quickly according to requirements.'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Mail
+  icon: "fas fa-envelope"
+  url: "mailto:g.raju2000@gmail.com"
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/RAJAGOPALAN-GANGADHARAN"
+- name: Linkedin
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/rajagopalan-gangadharan/"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Enthusiasm
+  percentage: 100
+  color: blue
+- name: Team Work
+  percentage: 95
+  color: yellow
+- name: Communication
+  percentage: 90
+  color: pink
+- name: Hard Working
+  percentage: 95
+  color: green
+- name: Fast Learner
+  percentage: 95
+  color: sky
+- name: Problem Solving
+  percentage: 90
+  color: orange
