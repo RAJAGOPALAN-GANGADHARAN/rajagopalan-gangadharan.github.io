@@ -33,7 +33,7 @@ outputs:
 # Enable global emoji support
 enableEmoji: true
 
-disqusShortname: rajagopalan-gangadharan-github-io.disqus.com
+disqusShortname: rajagopalan-gangadharan-github-io
 
 # Site parameters
 params:
