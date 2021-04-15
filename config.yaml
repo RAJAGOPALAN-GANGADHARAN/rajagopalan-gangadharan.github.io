@@ -33,6 +33,8 @@ outputs:
 # Enable global emoji support
 enableEmoji: true
 
+disqusShortname: disqus_CfKQuEg5U2
+
 # Site parameters
 params:
   # GitHub repo URL of your site
