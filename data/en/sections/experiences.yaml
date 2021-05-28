@@ -16,7 +16,7 @@ experiences:
     # company overview
     overview: AppDynamics is an application performance management and IT operations analytics company based in San Francisco.
   positions:
-  - designation: Software Engineer Intern
+  - designation: Software Engineer in Test Intern
     start: Jan 2021
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020

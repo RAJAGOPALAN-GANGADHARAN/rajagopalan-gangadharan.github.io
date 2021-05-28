@@ -7,7 +7,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: Software Engineer in Test
 # your company information
 company:
   name: AppDynamics (Cisco)
