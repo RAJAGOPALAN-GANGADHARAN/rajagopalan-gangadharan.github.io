@@ -1,0 +1,122 @@
+{{ define "header" }}
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+  />
+  <link rel="stylesheet" href="{{ "/css/layouts/list.css" | relURL}}">
+  <link rel="stylesheet" href="{{ "/css/navigators/sidebar.css" | relURL}}">
+{{ end }}
+
+{{ define "navbar" }}
+    {{ partial "navigators/navbar-2.html" . }}
+{{ end }}
+
+{{ define "sidebar" }}
+  {{ $homePage:="#" }}
+  {{ if site.IsMultiLingual }}
+    {{ $homePage = (path.Join (cond ( eq .Language.Lang "en") "" .Language.Lang) .Type) }}
+  {{ end }}
+
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="{{ "search" | absURL }}">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="{{ .Type | relLangURL }}" data-filter="all">{{ i18n .Type }}</a></li>
+            <div class="subtree">
+                {{ partial "navigators/sidebar.html" (dict "menuName" "notes" "menuItems" site.Menus.notes  "ctx" . ) }}
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "content" }}
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div style="padding-top:50px;padding-left:30px;">
+      <h3>AppBox</h3>
+      <h5>Check out some live demo of my work</h5>
+      <hr>
+    </div>
+    <div class="container-fluid post-card-holder" id="post-card-holder">
+      <div class="post-card">
+        <a href="/chip8-emulator/" class="post-card-link">
+          <div class="card">
+            <div class="card-head">
+              {{ $heroImage := resources.Get "images/chip8.png" }}
+              <img class="card-img-top" src='{{ $heroImage.RelPermalink }}' alt="Hero Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Chip8 Emulator</h5>
+              <p class="card-text post-summary">Chip8 Emulator written with Rust, JavaScript and wasm. Includes 15 different game roms to choose from.</p>
+            </div>
+            <div class="card-footer">
+              <a
+              href="/posts/"
+              class="float-right btn btn-outline-info btn-sm"
+              style="margin-left:3px;margin-right: 3px;"
+              >{{ i18n "read" }}</a
+              >
+              <a
+              href="/chip8-emulator/"
+              class="float-right btn btn-outline-info btn-sm"
+              style="margin-left:3px;margin-right: 3px;"
+              >Demo</a
+              >
+              <a
+              href="https://github.com/RAJAGOPALAN-GANGADHARAN/chip8-emulator"
+              class="float-right btn btn-outline-info btn-sm"
+              style="margin-left:3px;margin-right: 3px;"
+              >Github</a
+              >
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="post-card">
+        <a href="/Portfolio/" class="post-card-link">
+          <div class="card">
+            <div class="card-head">{{ $heroImage := resources.Get "images/jsos.png" }}
+              <img class="card-img-top" src='{{ $heroImage.RelPermalink }}' alt="Hero Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">JS-OS</h5>
+              <p class="card-text post-summary">An Operating system simulator on the web written using React. This can be used as an interactive portfolio as well!</p>
+            </div>
+            <div class="card-footer">
+              <a
+              href="/posts/"
+              class="float-right btn btn-outline-info btn-sm"
+              style="margin-left:3px;margin-right: 3px;"
+              >{{ i18n "read" }}</a
+              >
+              <a
+              href="/Portfolio/"
+              class="float-right btn btn-outline-info btn-sm"
+              style="margin-left:3px;margin-right: 3px;"
+              >Demo</a
+              >
+              <a
+              href="https://github.com/RAJAGOPALAN-GANGADHARAN/JS-OS"
+              class="float-right btn btn-outline-info btn-sm"
+              style="margin-left:3px;margin-right: 3px;"
+              >Github</a
+              >
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+{{ end }}
+

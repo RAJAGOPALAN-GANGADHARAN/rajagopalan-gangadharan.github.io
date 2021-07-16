@@ -5,3 +5,5 @@ customMenus:
   url: https://rajagopalan-gangadharan.github.io/Portfolio/
 - name: Notes
   url: /notes
+- name: AppBox
+  url: /appbox
