@@ -7,11 +7,11 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: Software Development Engineer 1
 # your company information
 company:
-  name: AppDynamics (Cisco)
-  url: "https://www.appdynamics.com/"
+  name: Amazon
+  url: "https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/Rajagopalan_SDE_Resume.pdf"

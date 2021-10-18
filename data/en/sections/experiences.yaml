@@ -10,14 +10,36 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Amazon
+    url: "https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer"
+    location: Chennai
+    overview: Amazon.com, Inc. is an American multinational technology company which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence.
+  positions:
+  - designation: Software Development Engineer 1
+    start: Sep 2021
+    responsibilities:
+    - On the Device Management and Services team, part of Core service that handles authentication, integrity and capabilities of Amazon devices.
+    - The service handles about a million transactions per second.
+
+- company:
     name: AppDynamics
     url: "https://www.appdynamics.com/"
     location: Bangalore
     # company overview
     overview: AppDynamics is an application performance management and IT operations analytics company based in San Francisco.
   positions:
+  - designation: Software Engineer in Test
+    start: June 2021
+    end: Sep 2021
+    responsibilities:
+    - Lead developer on an internal platform (Voluntary Project), integrated Okta SSO, wrote core backend features and cron jobs for routine jobs.
+    - Migrate An application to fully automated environment using Kubernetes.
+    - Created Test Plan and automation for a new Feature.
+    - Automated UI Tests using TestIM.
+    - Integrated applications to fully automated pipeline in teacmity.
   - designation: Software Engineer in Test Intern
     start: Jan 2021
+    end: May 2021
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
@@ -25,6 +47,7 @@ experiences:
     - Wrote a light weight Desktop User Monitoring to integrate with thousand eyes, orchestrating data to the controller.
     - Multi docker creation client for internal load generation use.
     - Setup load generators on ec2 instances and Automate multi node application with the created client.
+    - 100% Closure for e2e API tests.
 
 - company:
     name: QtWebkit

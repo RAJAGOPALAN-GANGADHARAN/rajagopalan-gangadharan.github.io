@@ -6,4 +6,4 @@ type: "appbox"
 ---
 
 appbox:
-khhlkj
+Interactive demo's of my personal projects
