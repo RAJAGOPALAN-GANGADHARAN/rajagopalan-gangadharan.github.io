@@ -31,21 +31,49 @@ buttons:
   filter: "js"
 - name: Rust
   filter: "rust"
+- name: Go
+  filter: "go"
+- name: Swift
+  filter: "swift"
 # your projects
 projects:
 - name: QtWebkit
   logo: /images/sections/projects/qt.png
-  role: Contributor
+  role: Maintainer
   timeline: "September 2019 - Present"
   url: https://github.com/qtwebkit/qtwebkit/pulls?q=author%3ARAJAGOPALAN-GANGADHARAN+ # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Qt Port of Apple's Webkit. [QtWebkit-Repo](https://github.com/qtwebkit/qtwebkit)
   tags: ["open-source", "qt", "c++", "cmake"]
 
+- name: Swift
+  logo: /images/sections/projects/swift.png
+  role: Contributor
+  timeline: "July 2021 - Present"
+  url: https://github.com/apple/swift/pulls?q=is%3Apr+author%3ARAJAGOPALAN-GANGADHARAN+
+  summary: Apple's cross platform swift Compiler used by iOS developers across globe. [Swift-repo](https://github.com/apple/swift)
+  tags: ["open-source","c++", "swift", "cmake", "unix", "ast", "llvm"]
+
+- name: Swift-Driver
+  logo: /images/sections/projects/swift.png
+  role: Contributor
+  timeline: "July 2021 - Present"
+  url: https://github.com/apple/swift-driver/pulls?q=is%3Apr+author%3ARAJAGOPALAN-GANGADHARAN+
+  summary: A drop in replacement for native swift driver. [Driver-repo](https://github.com/apple/swift-driver)
+  tags: ["open-source", "swift"]
+
+- name: PlasmaPy
+  logo: /images/sections/projects/plasmapy.png
+  role: Contributor
+  timeline: "July 2021 - Present"
+  url: https://github.com/PlasmaPy/PlasmaPy/pulls?q=is%3Apr+author%3ARAJAGOPALAN-GANGADHARAN+
+  summary: An open source Python package for plasma science that is under development. [Repo-link](https://github.com/PlasmaPy/PlasmaPy)
+  tags: ["open-source","python", "jupyter"]
+
 - name: Haiku
   logo: /images/sections/projects/haiku.png
   role: Contributor
-  timeline: "December 2018 - Present"
+  timeline: "December 2018 - September 2020"
   url: https://review.haiku-os.org/q/Rajagopalan
   #url: ""
   summary: An open-source operating system that specifically targets personal computing. [Haiku-repo](https://github.com/haiku/haiku)
@@ -89,7 +117,7 @@ projects:
   timeline: "Sept 2020"
   repo: https://github.com/RAJAGOPALAN-GANGADHARAN/DConsole
   summary: Feature rich light weight Cross Platform Local Logging tool.
-  tags: ["c++","unix","cmake", "windows", "qt", "personal"]
+  tags: ["c++","unix","cmake", "windows", "qt", "personal", "go", "react"]
 
 - name: Chip8 Emulator
   logo: /images/sections/skills/rust.png
