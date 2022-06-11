@@ -18,6 +18,9 @@ skills:
   logo: /images/sections/skills/git.png
   summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with Bitbucket."
   url: "https://github.com/RAJAGOPALAN-GANGADHARAN"
+- name: AWS
+  logo: /images/sections/skills/aws.png
+  summary: "Worked with various AWS services like EC2, ECS, lambda, SQS, SNS, S3 and so on."
 - name: Internet of Things
   logo: /images/sections/skills/cloud.png
   summary: "Hobby projects like autonomous cars, light handlers etc. using Raspberry Pi and few other sensors like ultrasound and IR."
