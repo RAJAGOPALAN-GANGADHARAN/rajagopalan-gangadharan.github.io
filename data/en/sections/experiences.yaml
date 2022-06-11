@@ -15,11 +15,23 @@ experiences:
     location: Chennai
     overview: Amazon.com, Inc. is an American multinational technology company which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence.
   positions:
-  - designation: Software Development Engineer 1
+  - designation: Software Development Engineer 1 (Device Master Service Team)
     start: Sep 2021
     responsibilities:
-    - On the Device Management and Services team, part of Core service that handles authentication, integrity and capabilities of Amazon devices.
-    - The service handles about a million transactions per second.
+    - On the DMS team, part of Core service that handles authentication, integrity and capabilities of Amazon devices.
+    - The team also owned critical services that manage digital contents of Amazon users.
+    - Owned 7 tier-1 services (low latency and high availability) end-to-end.
+    - Reduced latency of cross regional calls of a tier-1 service from 225ms to 85ms by designing and developing an in region proxy.
+    - Wrote Infrastructre as a code using CDK to automate stack creation/deployment, monitors and dashboard creation for some tier-1 and tier-2 services.
+    - Saved millions of dollars in infrastructre by estimating service scales based on traffic for high traffic events like Prime day, Christmas deals etc.
+    - Developed a chaos engineering tools on top of AWS Fault Injection system that is used by different teams in the Device Software Services org during Q4 events.
+    - Fore fronting Public AWS stack creation for tier-1 services in cn-north-1 region and providing guidance to teams within the org that want to achieve the same. This is a challenging task because aws-cn doesn't play nice with existing aws tools had to come up with ways to make cross regional ddb calls.
+    - Reduced IMR costs by writing a simple script to identify stale s3 buckets, Identified close to 500 TB (saving upto $70k)
+    - Provied Guidance/Mentorship for new joinees (Interns, SDE-1 and even SDE-2).
+    - Fixed software violations and mandates enforced by Amazon security team to reduce OE burden for various services owned by DMS team.
+    - Designed and implemented a dynamic distributed throttling framework for a tier-1 service that prevents Dynamodb hot partition thereby reducing errors faced by other clients because of aggresive clients. This reduced lot of sev-2 issues faced by clients and reduced cost as well (as calls that throttle ddb will not be made again).
+    - Rootcaused the timeout issue that the clients were facing while calling tier-1 service by working with cross functional teams like AWS loadbalancer, coral client config, allegiance etc.
+    - Developed a chatbot as part of internal hackathon using lex, kendra and ecs fargate that can be onboarded by any team within Amazon, to reduce customer wait time and to reduce OE burden.
 
 - company:
     name: AppDynamics
@@ -28,7 +40,7 @@ experiences:
     # company overview
     overview: AppDynamics is an application performance management and IT operations analytics company based in San Francisco.
   positions:
-  - designation: Software Engineer in Test
+  - designation: Software Engineer
     start: June 2021
     end: Sep 2021
     responsibilities:
@@ -37,7 +49,7 @@ experiences:
     - Created Test Plan and automation for a new Feature.
     - Automated UI Tests using TestIM.
     - Integrated applications to fully automated pipeline in teacmity.
-  - designation: Software Engineer in Test Intern
+  - designation: Software Engineer Intern
     start: Jan 2021
     end: May 2021
     # don't provide end date if you are currently working there. It will be replaced by "Present"
