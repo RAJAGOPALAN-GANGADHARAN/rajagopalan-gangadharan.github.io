@@ -14,7 +14,7 @@ company:
   url: "https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/Rajagopalan_SDE_Resume.pdf"
+resume: "files/Rajagopalan_SDE_Resume_2021.pdf"
 
 # Github Contributions
 gh_contrib: "gh-contrib"
