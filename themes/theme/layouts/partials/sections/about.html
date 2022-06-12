@@ -44,6 +44,11 @@
         ><button class="btn btn-dark">{{ i18n "resume"}}</button></a
       >
       {{ end }}
+      {{ if .gh_contrib }}
+      <a href="{{ .gh_contrib | relURL }}" target="#"
+        ><button class="btn btn-dark">View Github Contributions</button></a
+      >
+      {{ end }}
     </div>
     <!-- soft skills circular-progressbar -->
     <div class="col-sm-6 pt-5 pl-md-4 pl-sm-3 pt-sm-0">
