@@ -109,3 +109,6 @@ other = "View Certificate"
 
 [notes]
 other = "Notes"
+
+[view_page]
+other = "View page"

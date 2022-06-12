@@ -7,3 +7,5 @@ customMenus:
   url: /notes
 - name: AppBox
   url: /appbox
+- name: Github Contributions
+  url: /gh-contrib

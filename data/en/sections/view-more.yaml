@@ -1,0 +1,23 @@
+section:
+  name: View-more
+  id: view-more
+  enable: true
+  weight: 10
+  showOnNavbar: false
+
+accomplishments:
+- name: Interactive Portfolio
+  courseOverview: An OS themed portfolio
+  certificateURL: https://rajagopalan-gangadharan.github.io/Portfolio/
+
+- name: Notes
+  courseOverview: Notes collected by me for various purposes
+  certificateURL: /notes
+
+- name: AppBox
+  courseOverview: Interative Apps written by me
+  certificateURL: /appbox/
+
+- name: Github Contributions Chart
+  courseOverview: Interative Apps written by me
+  certificateURL: /gh-contrib/
